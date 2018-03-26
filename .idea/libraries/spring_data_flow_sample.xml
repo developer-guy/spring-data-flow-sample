@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="spring-data-flow-sample">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/spring-cloud-dataflow-shell-1.5.0.BUILD-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/spring-cloud-dataflow-server-local-1.5.0.BUILD-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

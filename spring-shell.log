@@ -1,0 +1,19 @@
+// dataflow 1.2.0.RELEASE log opened at 2018-03-26 15:35:38
+app register --name time-source --type source --uri maven://org.bthnapaydn.spring.cloud:spring-data-flow-time-source:jar:0.0.1-SNAPSHOT
+app register --name time-processor --type processor --uri maven://org.bthnapaydn.spring.cloud:spring-data-flow-time-processor:jar:0.0.1-SNAPSHOT
+app register --name logging-sink --type sink --uri maven://org.bthnapaydn.spring.cloud:spring-data-flow-logging-sink:jar:0.0.1-SNAPSHOT
+stream create --name time-to-log --definition 'time-source | time-processor | logging-sink'
+stream deploy --name time-to-log
+app register --name time-source --type source --uri maven://org.bthnapaydn.spring.cloud:spring-data-flow-time-source:jar:0.0.1-SNAPSHOT
+app register --name time-processor --type processor --uri maven://org.bthnapaydn.spring.cloud:spring-data-flow-time-processor:jar:0.0.1-SNAPSHOT
+app register --name logging-sink --type sink --uri maven://org.bthnapaydn.spring.cloud:spring-data-flow-logging-sink:jar:0.0.1-SNAPSHOT
+stream create --name time-to-log --definition 'time-source | time-processor | logging-sink'
+stream deploy --name time-to-log
+app register --name time-source --type source --uri maven://org.bthnapaydn.spring.cloud:spring-data-flow-time-source:jar:0.0.1-SNAPSHOT
+app register --name time-processor --type processor --uri maven://org.bthnapaydn.spring.cloud:spring-data-flow-time-processor:jar:0.0.1-SNAPSHOT
+app register --name logging-sink --type sink --uri maven://org.bthnapaydn.spring.cloud:spring-data-flow-logging-sink:jar:0.0.1-SNAPSHOT
+// [failed] stream create --name time-to-log --definition 'time-source | time-processor | logging-sink'
+stream create --name time-to-log --definition 'time-source | time-processor | logging-sink'
+stream deploy --name time-to-log
+exit
+// dataflow 1.2.0.RELEASE log closed at 2018-03-26 16:25:07
